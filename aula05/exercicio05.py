@@ -1,11 +1,19 @@
 nomes=["","","","",""]
 senhas=["","","","",""]
+menu=0
 
-for x in range (5):
-    nomes[x]= input("digite seu nome: ")
-    senhas[x] = input("digite sua senha: ")
+while menu!=3
+    menu= int(input("digite o número de acordo com o que você queer: \n"
+                    "[1]cadastro \n"
+                    "[2]login \n"
+                    "[3]sair"))
 
-for z in range (5):
-    print(f"login: {nomes[z]} \n"
-          f"senha: {senhas[z]} \n"
-          f"posição: {z}")
+    if menu == 1:
+        for x in range(5):
+            nomes[x]=input("digite seu nome: ")
+            senhas[x] = input("digite sua senha: ")
+
+    elif menu == 2:
+        nomeLogin=input("digite seu nome: ")
+        senhaLogin = input("digite sua senha: ")
+
